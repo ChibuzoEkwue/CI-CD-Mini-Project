@@ -12,6 +12,7 @@ const HomePage = () => {
           {process.env.ENVIRONMENT}
         </span>
       </p>
+      <p>This is a feature</p>
     </main>
   );
 };
