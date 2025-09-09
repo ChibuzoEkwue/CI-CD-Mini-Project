@@ -84,5 +84,6 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: >
-            -e ENVIRONMENT=staging
+            --build-env ENVIRONMENT=staging
             --force
+            --prebuilt
