@@ -1,5 +1,6 @@
 name: Set Up Project
-on: workflow_call
+on: 
+  workflow_call:
 jobs:
   Get_Code:
     runs-on: ubuntu-latest
