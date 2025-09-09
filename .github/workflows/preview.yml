@@ -86,4 +86,3 @@ jobs:
           vercel-args: >
             --build-env ENVIRONMENT=staging
             --force
-            --prebuilt
