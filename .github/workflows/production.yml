@@ -93,5 +93,5 @@ jobs:
           vercel-args: >
            --prod
            --force
-           ---build-env ENVIRONMENT=production
+           --build-env ENVIRONMENT=production
            
