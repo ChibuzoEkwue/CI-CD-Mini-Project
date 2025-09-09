@@ -73,8 +73,6 @@ jobs:
     needs: test
     if: github.ref == 'refs/heads/staging'
 
-    env:
-      ENVIRONMENT: staging
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -85,4 +83,5 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: ""
+          vercel-args: >
+            -e ENVIRONMENT=staging
